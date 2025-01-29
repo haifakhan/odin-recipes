@@ -5,19 +5,10 @@ ________________________________________________________________________________
 
 **Features**:
 
-Top 3 Pasta Recipes:
+Discover the most popular pasta recipes of all time!
 
-Discover the most popular pasta recipes of all time, including:
 
-Alfredo Pasta
-
-Orange Sauce Pasta
-
-Mac and Cheese
-
-Pasta Panic Game:
-
-A fast-paced game where you have to make pasta within 1 minute. Drag ingredients to the pot and score as high as you can!
+Play the Pasta PanicL Chef Challenge Game where you have to make pasta within 1 minute. Users will drag ingredients to the pot and score as high as they can!
 
 ___________________________________________________________________________________________________________________________________
 
@@ -25,8 +16,8 @@ ________________________________________________________________________________
 
 To run this app locally, follow these steps:
 
-Clone the repository to your local machine.
+1. Clone the repository to your local machine.
 
-Open the index.html file in your web browser.
+2. Open the index.html file in your web browser.
 
-Enjoy exploring the recipes and playing the game!
+3. Enjoy exploring the recipes and playing the game!
