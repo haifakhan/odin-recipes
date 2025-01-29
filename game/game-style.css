@@ -1,0 +1,217 @@
+
+body {
+    background-image: url('../img/kitchen-bg.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/* Header */
+.header_background {
+    background-color: rgba(16, 8, 0, 0.8);
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.retro_container {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 104px;
+    letter-spacing: 5px;
+    margin: 0;
+    position: relative;
+    color: #ff8c42;
+    text-shadow: 4px 4px 0 #820900, 8px 8px 0 #220e04;
+}
+
+.title_bot {
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 4px 4px 0 #314eb6, 8px 8px 0 #220e04;
+}
+
+#game-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    border: 4px solid #220e04;
+}
+
+#score-board {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 28px;
+    color: #820900;
+    margin: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Timer */
+#timer {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 48px;
+    color: #220e04;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+#game-area {
+    min-height: 400px;
+    position: relative;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    padding: 20px;
+    border: 2px solid #220e04;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.ingredient {
+    width: 80px;
+    cursor: move;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.ingredient:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.pot {
+    width: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar {
+    width: 300px;
+    height: 30px;
+    border: 3px solid #220e04;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #ff8c42;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.step-instruction {
+    font-size: 28px;
+    margin: 20px;
+    color: #314eb6;
+    font-family: 'Satisfy', cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.draggable-area {
+    border: 2px dashed #220e04;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#result-message {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 36px;
+    margin: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #820900;
+}
+
+.cooking-game-button {
+    background-color: #ff8c42;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    width: 300px;
+    padding: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid #220e04;
+    transition: background-color 1s, box-shadow 0.5s ease-in-out;
+    animation: glow 2s infinite;
+    margin: 20px auto;
+    display: block;
+}
+
+.cooking-game-button:hover {
+    background-color: #820900;
+    color: aliceblue;
+    box-shadow: 0 0 20px 5px #ffdfcb;
+}
+
+#restart-btn {
+    display: none; 
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 10px 5px #e2988c;
+    }
+    50% {
+        box-shadow: 0 0 20px 10px #ffffff;
+    }
+}
+
+.return-home a {
+    background-color: #314eb6;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.return-home a:hover {
+    background-color: #820900;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.ingredient {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.cooking-game-button {
+    animation: bounce 2s infinite, glow 2s infinite;
+}
