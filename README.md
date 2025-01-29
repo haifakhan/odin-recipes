@@ -1,7 +1,9 @@
-Pasta Recipes App
-Welcome to the Pasta Recipes app! This is a fun and interactive website where you can explore top pasta recipes and play a quick pasta-making game. The app is built using HTML, CSS, and JavaScript, making it a simple yet engaging experience for pasta lovers.
+**Pasta Recipes App**
 
-Features:
+Welcome to the Pasta Recipes app! This is a fun and interactive website where you can explore top pasta recipes and play a quick pasta-making game. The app is built using HTML, CSS, and JavaScript, making it a simple yet engaging experience for pasta lovers.
+___________________________________________________________________________________________________________________________________
+
+**Features**:
 
 Top 3 Pasta Recipes:
 
@@ -17,8 +19,10 @@ Pasta Panic Game:
 
 A fast-paced game where you have to make pasta within 1 minute. Drag ingredients to the pot and score as high as you can!
 
+___________________________________________________________________________________________________________________________________
 
-Installation
+**Installation**
+
 To run this app locally, follow these steps:
 
 Clone the repository to your local machine.
